@@ -1,0 +1,12 @@
+2026-09-20 10:00:01 INFO Application started successfully
+2026-09-20 10:01:15 INFO User login successful
+2026-09-20 10:02:20 WARN High response time detected
+2026-09-20 10:03:11 ERROR Database connection failed
+2026-09-20 10:03:12 ERROR Connection timeout exception
+2026-09-20 10:04:05 INFO Database connection restored
+2026-09-20 10:05:22 ERROR HTTP 500 Internal Server Error
+2026-09-20 10:06:10 WARN Memory usage above normal level
+2026-09-20 10:07:45 INFO Request completed successfully
+2026-09-20 10:08:30 ERROR HTTP 503 Service Unavailable
+2026-09-20 10:09:12 INFO Health check passed
+2026-09-20 10:10:18 ERROR NullPointerException occurred
