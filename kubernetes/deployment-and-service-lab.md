@@ -88,12 +88,14 @@ Expected result: an HTTP response such as `HTTP/1.1 200 OK`. The forwarding comm
 
 ## 4. Clean up the lab
 
+Remove the resources, then remove the now-empty namespace:
+
 ```bash
-kubectl delete -f web.yaml
+kubectl delete deployment/web service/web -n devops-lab
 kubectl delete namespace devops-lab
 ```
 
-The second command removes the now-empty lab namespace. It also deletes anything else someone may have added to that specifically named namespace, so keep this namespace dedicated to the exercise.
+Keep this namespace dedicated to the exercise: deleting it also deletes any other resources someone may have added there.
 
 ## Troubleshooting hint
 
