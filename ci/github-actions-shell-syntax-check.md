@@ -35,14 +35,14 @@ jobs:
             find . -type f -name '*.sh' -not -path './.git/*' -print0
           )
 
-          if (('\${#scripts[@]} == 0)); then
+          if ((${#scripts[@]} == 0)); then
             echo "No shell scripts found."
             exit 0
           fi
 
-          for script in "\${scripts[@]}"; do
-            echo "Checking \${script}"
-            bash -n "\${script}"
+          for script in "${scripts[@]}"; do
+            echo "Checking ${script}"
+            bash -n "${script}"
           done
 ```
 
